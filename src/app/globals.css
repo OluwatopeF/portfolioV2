@@ -1,42 +1,406 @@
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
-html,
-body {
-  max-width: 100vw;
-  overflow-x: hidden;
-}
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-}
-
-a {
-  color: inherit;
+*{
+  font-family: Georgia, 'Times New Roman', Times, serif;
   text-decoration: none;
+  list-style: none;
+  margin: 0%;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
+/* NOTE: FIX MOBILE AFTER CREATING THE ENTIRE SITE FUNCTIONALITY */
+
+.navBar{
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  background-color: aquamarine;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  width: 100%;
+  display: flex;
+  justify-items: center;
+  justify-content: space-between;
+  padding: 0 0.2rem;
+}
+
+.navBar .mobileMenu-btn{
+  display: none;
+}
+
+.navBar .titleName{
+  background-color: chartreuse;
+  font-size: 1.5em;
+  width: 20%;
+  padding: 0.5em;
+  /* Keeps title name in middle */
+  text-align: center;
+  vertical-align: middle;
+  line-height: 75px;
+}
+
+.navBar ul{
+  background-color: beige;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 1.2em;
+  width: 35em;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 75px;
+  cursor: pointer;
+}
+
+/* Original for desktop ver. */
+/* .navBar ul{
+  background-color: beige;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 1.2em;
+  width: 35em;
+} */
+
+.navBar .contactBtn{
+  background-color: lightcoral;
+  width: 10%;
+  display: flex;
+  justify-content: center;
+  height: 75px;
+  font-size: 1.5rem;
+  padding: 0.5em;
+  border-radius: 40px;
+  margin-right: 0.5em;
+  margin-top: 0.3em;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 75px;
+}
+
+.testing{
+  /* template for components */
+  /* copy and paste for future use */
+  background-color: lightslategray;
+  position: relative;
+  top: 6.7em;
+  width: 65%;
+  height: 90vh;
+  justify-self: center;
+  margin:10px 15px;
+  scroll-margin-top: 115px;
+  justify-items: center;
+
+  /* delete bottom after finished or keep for editing */
+  border: 2px;
+  border-color: black;
+  border-style: dashed;
+}
+
+
+.intro-header{
+  margin-top: 8em;
+  font-size: 2rem;
+  
+}
+
+.intro-link{
+  margin-top: 15rem;
+  margin-right: 2rem;
+  justify-self: flex-end;
+}
+
+.intro-link-btn{
+  width: 15rem;
+  height:5rem
+}
+
+
+/* Myproject page */
+.project-skills{
+  margin-top: 30px;
+  justify-content: center;
+  text-align: center;
+}
+
+.project-showcase{
+  display: flex;
+  margin-top: 10px;
+  background-color: blue;
+  width: 80rem;
+  height: 33rem;
+  justify-content: space-between;
+
+  white-space: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-behavior: smooth;
+
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Hiding scrollbar */
+.project-showcase::-webkit-scrollbar{
+  display: none;
+}
+
+.project-item{
+  /* IMPORTANT FOR SCROLL: KEEP FLEX UNCHANGED */
+  flex: 0 0 auto;
+  height: 30rem;
+  background-color: white;
+  width: 40rem;
+  margin: 20px;
+  text-wrap: wrap;
+  border-radius: 20px;
+
+}
+
+.project-roulette{
+  margin-top: 10px;
+  width: 80em;
+  background-color: blue;
+  height: 100px;
+  justify-content: space-around;
+  display: flex;
+  flex-direction: row;
+
+  white-space: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-behavior: smooth;
+
+  -webkit-overflow-scrolling: touch;
+}
+
+.project-item-img{
+  width: 40rem;
+  height: 10rem;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  overflow: hidden;
+}
+
+.project-item-img img{
+  width: 40rem;
+  height: 30rem;
+}
+
+.project-item-desc{
+  background-color: lightblue;
+}
+
+.project-item-btn{
+  background-color: black;
+  width: 13rem;
+  height: 5em;
+  color: white;
+  font-weight: bolder;
+  font-size: 20px;
+  border-radius: 20px;
+  display: block;
+  justify-self: right;
+  margin: 10px;
+}
+
+.pSkill-img{
+  background-color: white;
+  width: 100px;
+  height: 100px;
+
+  
+}
+
+/* contact section */
+.contactMain{
+  /* keeps section in one container */
+  /* keep in same background color of new color */
+  background-color: aqua;
+  width: 95%;
+  height: 85vh;
+  margin-top: 2.5vh;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.contactSocials{
+  background-color: red;
+  width: 100%;
+  height: 50%;
+}
+
+
+
+.contactMisc{
+  background-color: yellow;
+  width: 100%;
+  height: 50%;
+}
+
+.contactSocials-L{
+  margin: 5px;
+  width: 40em;
+  height: 5em;
+  border-radius: 20px;
+  color: white;
+  background-color: blue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  font-weight: bolder;
+  font-size: 20px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+/* for future use... its bluesky(if forgotten) */
+/* .contactSocials-B{
+  width: 40em;
+  height: 5em;
+  border-radius: 20px;
+  color: white;
+  background-color: rgb(0, 133, 255);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  font-weight: bolder;
+  font-size: 20px;
+} */
+
+.contactSocials-M{
+  margin: 5px;
+  width: 40em;
+  height: 5em;
+  border-radius: 20px;
+  color: black;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  font-weight: bolder;
+  font-size: 20px;
+}
+
+.contactSocials-G{
+  margin: 5px;
+  width: 40em;
+  height: 5em;
+  border-radius: 20px;
+  color: white;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  font-weight: bolder;
+  font-size: 20px;
+}
+
+.contactSoc-btnImg{
+  width: 80px;
+  height: 80px;
+  background-color: aliceblue;
+}
+
+
+
+/* MOBILE VER. */
+/* WILL BE DEALT WITH AFTER FINISHING THE ENTIRE PROJECT */
+
+@media(max-width: 1200px){
+  /* For half PC screen */
+  /* Adjust for future sizes */
+  .testing{
+    width: 80%;
   }
 }
+
+@media(max-width:600px){
+  /* MOBILE VERSION CSS */
+
+  .navBar{
+    display: block;
+    width: 100%;
+    justify-content: right;
+    height: 30vh;
+  }
+
+  /* bobile menu btn: KEEP TO USE FUNCTION */
+  .navBar .mobileMenu-btn{
+    display: block;
+    position: absolute;
+    width:70px; 
+    height: 70px;
+    background-color: black;
+    margin-left: 85%;
+    color: white;
+  }
+
+  /* default list */
+  .navBar ul li{
+    height: 30%;
+    background-color: aliceblue;
+  }
+
+  /* no need for contact btn */
+  .navBar .contactBtn{
+    display: none;
+  }
+
+  /* navbar must be at same height as menu button */
+  .navBar{
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  /* hide all elemnts under menu button */
+  .navBar ul{
+    display: none;
+  }
+
+  /* Show name  */
+  .navBar .titleName{
+    padding: 0;
+    display: block;
+    height: 70px;
+    width: 65%;
+  }
+
+  .titleName.gone{
+    display: none;
+  }
+
+  /* function mobile menu to show menu */
+  /* keep */
+  .mobileMenu {
+    display: none;
+  }
+  
+  .mobileMenu.open {
+    display: block;
+    flex-direction: column;
+    width: 70%;
+    /* need to keep nav items to right */
+    justify-self: right;
+    justify-items: center;
+    padding: 0%;
+    height: 50vh;
+  }
+
+  /* END OF TOGGLE CHANGES */
+
+  .testing{
+    /* mobile version template for components */
+    width: 100%;
+    /* height stays the same for each */
+    height: 80vh;
+    /* create a carousel format for mobile only */
+    position: relative;
+    top: 4em;
+    /* change this for the contact page */
+
+    scroll-margin-top: 70px;
+  
+  }
+
+}
+
