@@ -11,12 +11,12 @@ function Contact() {
         {/* logos required */}
         <ul>
           <li>
-            <a href= "#" target="_blank"><button className='contactSocials-L'><img src='ln.jpg' className='contactSoc-btnImg'></img>Linkedin</button></a>
+            <a href= "https://www.linkedin.com/in/oluwatope-folorunso-523222207/" target="_blank"><button className='contactSocials-L'><img src='images/logos/ln.png' className='contactSoc-btnImg'></img>Linkedin</button></a>
           </li>
 
           <li>
             <a href='mailto:topeumar@gmail.com' target='_blank'>
-            <button className='contactSocials-M'><img src='ln.jpg' className='contactSoc-btnImg'></img>Gmail</button>
+            <button className='contactSocials-M'><img src='/images/logos/gm.png' className='contactSoc-btnImg'></img>Gmail</button>
             </a>
           </li>
         </ul>
@@ -29,7 +29,7 @@ function Contact() {
         <ul>
           <li>
             <a href='https://www.github.com/OluwatopeF' target='_blank'>
-            <button className='contactSocials-G'><img src='ln.jpg' className='contactSoc-btnImg'></img>Github</button></a>
+            <button className='contactSocials-G'><img src='/images/logos/gh.png' className='contactSoc-btnImg'></img>Github</button></a>
           </li>
         </ul>
       </section>

@@ -1,7 +1,7 @@
 // My projects component
 // needs a list that can be infinitely stacked
 // place a minimum of at least two projects
-// pull project image and description form assets folder
+// pull project image and description from public folder
 
 import React from 'react';
 import desc from '../src/assets/desc.json';
@@ -35,17 +35,17 @@ function MyProjects() {
 
     
       </div>
-
-      <div className='project-skills'>
+        <br></br>
         <h1>Programming languages used</h1>
-        <div className='project-roulette'>
-          {icons.map((data) =>(
-            <div className='pSkill-img' key={data.id}>
-                <img src={data.image}/>
-            </div>
-          ))}
-        </div>
+
+      <div className='project-roulette'>
+        {icons.map((data) =>(
+          <div key={data.id}>
+              <img src={data.image} className='pSkill-img'/>
+          </div>
+        ))}
       </div>
+
 
     </div>
   )

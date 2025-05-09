@@ -1,5 +1,5 @@
 *{
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  /* font-family: Georgia, 'Times New Roman', Times, serif; */
   text-decoration: none;
   list-style: none;
   margin: 0%;
@@ -11,7 +11,7 @@
   position: fixed;
   z-index: 1;
   top: 0;
-  background-color: aquamarine;
+  background-color: rgb(45,49,66);
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
   width: 100%;
@@ -26,18 +26,19 @@
 }
 
 .navBar .titleName{
-  background-color: chartreuse;
   font-size: 1.5em;
   width: 20%;
   padding: 0.5em;
+  color: white;
   /* Keeps title name in middle */
   text-align: center;
   vertical-align: middle;
   line-height: 75px;
+  cursor: default;
 }
 
 .navBar ul{
-  background-color: beige;
+  color: white;
   display: flex;
   justify-content: space-evenly;
   padding: 1.2em;
@@ -48,17 +49,19 @@
   cursor: pointer;
 }
 
-/* Original for desktop ver. */
-/* .navBar ul{
-  background-color: beige;
-  display: flex;
-  justify-content: space-evenly;
-  padding: 1.2em;
-  width: 35em;
-} */
+
+.mobileMenu a {
+  color: white;
+}
+
+.mobileMenu a:hover{
+  color: rgb(79,93,117);
+}
+
 
 .navBar .contactBtn{
-  background-color: lightcoral;
+  background-color: coral;
+
   width: 10%;
   display: flex;
   justify-content: center;
@@ -73,10 +76,22 @@
   line-height: 75px;
 }
 
+.navBar .contactBtn a{
+  color: rgb(45,49,66);
+}
+
+.navBar .contactBtn:hover {
+  background-color: rgb(79,93,117);
+}
+
+.navBar .contactBtn a:hover {
+  color: white;
+}
+
 .testing{
   /* template for components */
   /* copy and paste for future use */
-  background-color: lightslategray;
+  background-color: rgb(79,93,117);
   position: relative;
   top: 6.7em;
   width: 65%;
@@ -85,11 +100,9 @@
   margin:10px 15px;
   scroll-margin-top: 115px;
   justify-items: center;
-
-  /* delete bottom after finished or keep for editing */
   border: 2px;
-  border-color: black;
-  border-style: dashed;
+  border-color: rgb(45,49,66);
+  border-style: double;
 }
 
 
@@ -107,22 +120,27 @@
 
 .intro-link-btn{
   width: 15rem;
-  height:5rem
+  height:5rem;
+  border-radius: 20px;
+  background-color: white;
+  color: rgb(45,49,66);
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.intro-link-btn:hover{
+  color: white;
+  background-color: rgb(45,49,66);
 }
 
 
-/* Myproject page */
-.project-skills{
-  margin-top: 30px;
-  justify-content: center;
-  text-align: center;
-}
+/* My project page */
 
 .project-showcase{
   display: flex;
   margin-top: 10px;
-  background-color: blue;
-  width: 80rem;
+  background-color: coral;
+  width: 100%;
   height: 33rem;
   justify-content: space-between;
 
@@ -132,12 +150,21 @@
   scroll-behavior: smooth;
 
   -webkit-overflow-scrolling: touch;
+
+  
 }
 
-/* Hiding scrollbar */
-.project-showcase::-webkit-scrollbar{
-  display: none;
+.project-showcase a{
+  width: 13em;
+  display: block;
+  justify-self: right;
 }
+
+
+/* Hiding scrollbar */
+/* .project-showcase::-webkit-scrollbar{
+  display: none;
+} */
 
 .project-item{
   /* IMPORTANT FOR SCROLL: KEEP FLEX UNCHANGED */
@@ -153,19 +180,21 @@
 
 .project-roulette{
   margin-top: 10px;
-  width: 80em;
-  background-color: blue;
-  height: 100px;
-  justify-content: space-around;
+  width: 100%;
+  height: 130px;
+  background-color: white;
   display: flex;
   flex-direction: row;
-
+  justify-content: space-between;
+  
+  overflow: auto hidden;
   white-space: nowrap;
-  overflow-x: auto;
-  overflow-y: hidden;
-  scroll-behavior: smooth;
+}
 
-  -webkit-overflow-scrolling: touch;
+.pSkill-img{
+  width: 100px;
+  height: 100px;
+  margin: 10px;
 }
 
 .project-item-img{
@@ -182,11 +211,14 @@
 }
 
 .project-item-desc{
-  background-color: lightblue;
+  background-color: coral;
+  border: 2px;
+  border-color: rgb(45,49,66);
+  border-style: double;
 }
 
 .project-item-btn{
-  background-color: black;
+  background-color: rgb(79,93,117);
   width: 13rem;
   height: 5em;
   color: white;
@@ -198,19 +230,15 @@
   margin: 10px;
 }
 
-.pSkill-img{
-  background-color: white;
-  width: 100px;
-  height: 100px;
-
-  
+.project-item-btn:hover{
+  cursor: pointer;
+  background-color: rgb(45,49,66);
 }
 
 /* contact section */
 .contactMain{
   /* keeps section in one container */
   /* keep in same background color of new color */
-  background-color: aqua;
   width: 95%;
   height: 85vh;
   margin-top: 2.5vh;
@@ -219,7 +247,7 @@
 }
 
 .contactSocials{
-  background-color: red;
+
   width: 100%;
   height: 50%;
 }
@@ -227,18 +255,19 @@
 
 
 .contactMisc{
-  background-color: yellow;
+
   width: 100%;
   height: 50%;
 }
 
 .contactSocials-L{
   margin: 5px;
-  width: 40em;
+  width: 70%;
   height: 5em;
   border-radius: 20px;
   color: white;
   background-color: blue;
+  justify-self: center;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -251,11 +280,12 @@
 
 /* for future use... its bluesky(if forgotten) */
 /* .contactSocials-B{
-  width: 40em;
+  width: 70%;
   height: 5em;
   border-radius: 20px;
   color: white;
   background-color: rgb(0, 133, 255);
+  justify-self: center;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -266,11 +296,12 @@
 
 .contactSocials-M{
   margin: 5px;
-  width: 40em;
+  width: 70%;
   height: 5em;
   border-radius: 20px;
   color: black;
   background-color: white;
+  justify-self: center;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -281,11 +312,12 @@
 
 .contactSocials-G{
   margin: 5px;
-  width: 40em;
+  width: 70%;
   height: 5em;
   border-radius: 20px;
   color: white;
   background-color: black;
+  justify-self: center;
   display: flex;
   align-items: center;
   justify-content: center;
