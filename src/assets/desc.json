@@ -8,16 +8,16 @@
   },
   {
      "id":"2",
-     "image":"placeholder.img",
-     "title":"Project Beta",
-     "description":"Testing project two...",
+     "image":"#",
+     "title":"Travel Recommendations",
+     "description":"This is a static website that uses JSON to display various locations through a search bar",
      "link":"#"
   },
   {
      "id":"3",
-     "image":"placeholder.img",
-     "title":"Project Gamma",
-     "description":"Testing project three...",
+     "image":"#",
+     "title":"Fortune Teller (In progress)",
+     "description":"This app generates a one of three responses after giving a question ",
      "link":"#"
   }
 ]

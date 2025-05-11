@@ -28,5 +28,10 @@
         "id":"6",
         "title":"MySQL",
         "image":"/images/logos/python.svg"
+    },
+    {
+        "id":"7",
+        "title":"MySQL",
+        "image":"/images/logos/docker.svg"
     }
 ]
