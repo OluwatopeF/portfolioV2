@@ -369,7 +369,10 @@
   /* default list */
   .navBar ul li{
     height: 30%;
-    background-color: aliceblue;
+  }
+
+  .navBar ul li a{
+    color: rgb(45,49,66);
   }
 
   /* no need for contact btn */
@@ -392,7 +395,7 @@
   /* Show name  */
   .navBar .titleName{
     padding: 0;
-    display: block;
+    display: none;
     height: 70px;
     width: 65%;
   }
@@ -408,9 +411,12 @@
   }
   
   .mobileMenu.open {
+    background-color: coral;
+    color: rgb(45,49,66);
     display: block;
     flex-direction: column;
     width: 70%;
+    margin-top: 10vh;
     /* need to keep nav items to right */
     justify-self: right;
     justify-items: center;
@@ -420,18 +426,43 @@
 
   /* END OF TOGGLE CHANGES */
 
+  /* intro */
+  .intro-link{
+  margin-right: 2rem;
+  justify-self: flex-end;
+}
+
+  .intro-header{
+  margin-top: 2rem;
+  margin-left: 1rem;
+  }
+
   .testing{
     /* mobile version template for components */
     width: 100%;
     /* height stays the same for each */
-    height: 80vh;
+    height: 90vh;
     /* create a carousel format for mobile only */
     position: relative;
     top: 4em;
     /* change this for the contact page */
-
     scroll-margin-top: 70px;
+
+    font-size: 90%;
   
+  }
+
+  /* project section Mobile */
+  .project-item{
+    width: 25rem;
+  }
+
+  .project-item-img{
+    width: 25rem;
+  }
+
+  .project-item-btn{
+    width: 12rem;
   }
 
 }
