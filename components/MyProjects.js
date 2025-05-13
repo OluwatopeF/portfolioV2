@@ -36,7 +36,7 @@ function MyProjects() {
     
       </div>
         <br></br>
-        <h1>Programming languages used</h1>
+        <h1>Programming languages / frameworks used</h1>
 
       <div className='project-roulette'>
         {icons.map((data) =>(
