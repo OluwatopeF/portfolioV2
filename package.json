@@ -1,5 +1,5 @@
 {
-  "homepage": "https://oluwatopeF.github.io/portfoiloV2",
+  "homepage": "https://oluwatopef.github.io/portfoiloV2",
   "scripts": {
   "dev": "next dev",
   "build": "next build && next export",
