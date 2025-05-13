@@ -1,0 +1,372 @@
+/* [project]/src/app/globals.css [app-client] (css) */
+* {
+  margin: 0%;
+  text-decoration: none;
+  list-style: none;
+}
+
+.navBar {
+  z-index: 1;
+  background-color: #2d3142;
+  justify-content: space-between;
+  justify-items: center;
+  width: 100%;
+  padding: 0 .2rem;
+  display: flex;
+  position: fixed;
+  top: 0;
+}
+
+.navBar .mobileMenu-btn {
+  display: none;
+}
+
+.navBar .titleName {
+  color: #fff;
+  text-align: center;
+  vertical-align: middle;
+  cursor: default;
+  width: 20%;
+  padding: .5em;
+  font-size: 1.5em;
+  line-height: 75px;
+}
+
+.navBar ul {
+  color: #fff;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  justify-content: space-evenly;
+  width: 35em;
+  padding: 1.2em;
+  line-height: 75px;
+  display: flex;
+}
+
+.mobileMenu a {
+  color: #fff;
+}
+
+.mobileMenu a:hover {
+  color: #4f5d75;
+}
+
+.navBar .contactBtn {
+  text-align: center;
+  vertical-align: middle;
+  background-color: coral;
+  border-radius: 40px;
+  justify-content: center;
+  width: 10%;
+  height: 75px;
+  margin-top: .3em;
+  margin-right: .5em;
+  padding: .5em;
+  font-size: 1.5rem;
+  line-height: 75px;
+  display: flex;
+}
+
+.navBar .contactBtn a {
+  color: #2d3142;
+}
+
+.navBar .contactBtn:hover {
+  background-color: #4f5d75;
+}
+
+.navBar .contactBtn a:hover {
+  color: #fff;
+}
+
+.testing {
+  background-color: #4f5d75;
+  border: 2px double #2d3142;
+  justify-self: center;
+  justify-items: center;
+  width: 65%;
+  height: 90vh;
+  margin: 10px 15px;
+  scroll-margin-top: 115px;
+  position: relative;
+  top: 6.7em;
+}
+
+.intro-header {
+  margin-top: 8em;
+  font-size: 2rem;
+}
+
+.intro-link {
+  justify-self: flex-end;
+  margin-top: 15rem;
+  margin-right: 2rem;
+}
+
+.intro-link-btn {
+  color: #2d3142;
+  background-color: #fff;
+  border-radius: 20px;
+  width: 15rem;
+  height: 5rem;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.intro-link-btn:hover {
+  color: #fff;
+  background-color: #2d3142;
+}
+
+.project-showcase {
+  white-space: nowrap;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  background-color: coral;
+  justify-content: space-between;
+  width: 100%;
+  height: 33rem;
+  margin-top: 10px;
+  display: flex;
+  overflow: auto hidden;
+}
+
+.project-showcase a {
+  justify-self: right;
+  width: 13em;
+  display: block;
+}
+
+.project-item {
+  text-wrap: wrap;
+  background-color: #fff;
+  border-radius: 20px;
+  flex: none;
+  width: 40rem;
+  height: 30rem;
+  margin: 20px;
+}
+
+.project-roulette {
+  white-space: nowrap;
+  background-color: #fff;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  height: 130px;
+  margin-top: 10px;
+  display: flex;
+  overflow: auto hidden;
+}
+
+.pSkill-img {
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+}
+
+.project-item-img {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  width: 40rem;
+  height: 10rem;
+  overflow: hidden;
+}
+
+.project-item-img img {
+  width: 40rem;
+  height: 30rem;
+}
+
+.project-item-desc {
+  background-color: coral;
+  border: 2px double #2d3142;
+}
+
+.project-item-btn {
+  color: #fff;
+  background-color: #4f5d75;
+  border-radius: 20px;
+  justify-self: right;
+  width: 13rem;
+  height: 5em;
+  margin: 10px;
+  font-size: 20px;
+  font-weight: bolder;
+  display: block;
+}
+
+.project-item-btn:hover {
+  cursor: pointer;
+  background-color: #2d3142;
+}
+
+.contactMain {
+  flex-wrap: wrap;
+  width: 95%;
+  height: 85vh;
+  margin-top: 2.5vh;
+  display: flex;
+}
+
+.contactSocials, .contactMisc {
+  width: 100%;
+  height: 50%;
+}
+
+.contactSocials-L {
+  color: #fff;
+  text-align: center;
+  vertical-align: middle;
+  background-color: #00f;
+  border-radius: 20px;
+  justify-content: center;
+  justify-self: center;
+  align-items: center;
+  gap: 40px;
+  width: 70%;
+  height: 5em;
+  margin: 5px;
+  font-size: 20px;
+  font-weight: bolder;
+  display: flex;
+}
+
+.contactSocials-M {
+  color: #000;
+  background-color: #fff;
+  border-radius: 20px;
+  justify-content: center;
+  justify-self: center;
+  align-items: center;
+  gap: 40px;
+  width: 70%;
+  height: 5em;
+  margin: 5px;
+  font-size: 20px;
+  font-weight: bolder;
+  display: flex;
+}
+
+.contactSocials-G {
+  color: #fff;
+  background-color: #000;
+  border-radius: 20px;
+  justify-content: center;
+  justify-self: center;
+  align-items: center;
+  gap: 40px;
+  width: 70%;
+  height: 5em;
+  margin: 5px;
+  font-size: 20px;
+  font-weight: bolder;
+  display: flex;
+}
+
+.contactSoc-btnImg {
+  background-color: #f0f8ff;
+  width: 80px;
+  height: 80px;
+}
+
+@media (width <= 1200px) {
+  .testing {
+    width: 80%;
+  }
+}
+
+@media (width <= 600px) {
+  .navBar {
+    justify-content: right;
+    width: 100%;
+    height: 30vh;
+    display: block;
+  }
+
+  .navBar .mobileMenu-btn {
+    color: #fff;
+    background-color: #000;
+    width: 70px;
+    height: 70px;
+    margin-left: 85%;
+    display: block;
+    position: absolute;
+  }
+
+  .navBar ul li {
+    height: 30%;
+  }
+
+  .navBar ul li a {
+    color: #2d3142;
+  }
+
+  .navBar .contactBtn {
+    display: none;
+  }
+
+  .navBar {
+    justify-content: space-between;
+    height: 70px;
+    display: flex;
+  }
+
+  .navBar ul {
+    display: none;
+  }
+
+  .navBar .titleName {
+    width: 65%;
+    height: 70px;
+    padding: 0;
+    display: none;
+  }
+
+  .titleName.gone, .mobileMenu {
+    display: none;
+  }
+
+  .mobileMenu.open {
+    color: #2d3142;
+    background-color: coral;
+    flex-direction: column;
+    justify-self: right;
+    justify-items: center;
+    width: 70%;
+    height: 50vh;
+    margin-top: 10vh;
+    padding: 0%;
+    display: block;
+  }
+
+  .intro-link {
+    justify-self: flex-end;
+    margin-right: 2rem;
+  }
+
+  .intro-header {
+    margin-top: 2rem;
+    margin-left: 1rem;
+  }
+
+  .testing {
+    width: 100%;
+    height: 90vh;
+    scroll-margin-top: 70px;
+    font-size: 90%;
+    position: relative;
+    top: 4em;
+  }
+
+  .project-item, .project-item-img {
+    width: 25rem;
+  }
+
+  .project-item-btn {
+    width: 12rem;
+  }
+}
+
+/*# sourceMappingURL=src_app_globals_css_f9ee138c._.single.css.map*/
