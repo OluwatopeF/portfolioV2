@@ -1,10 +1,4 @@
 {
-  "homepage": "https://oluwatopef.github.io/portfoiloV2",
-  "scripts": {
-  "dev": "next dev",
-  "build": "next build && next export",
-  "deploy": "npm run build && gh-pages -d out"
-  },
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
