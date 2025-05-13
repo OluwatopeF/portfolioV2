@@ -1,7 +1,7 @@
 [
   {
      "id":"1",
-     "image":"images/cMG.jpg",
+     "image":"/public/images/cMG.jpg",
      "title":"Color Memory Game",
      "description":"This is a memory game that involves choosing two matching colors within a time limit of 30 seconds. Start playing by clicking 'Start/Restart'.",
      "link":"#"
