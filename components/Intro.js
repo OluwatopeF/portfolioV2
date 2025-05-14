@@ -13,7 +13,7 @@ function Intro() {
 
       {/* link recent resume to btn as download or online display(preferred) */}
       <div className='intro-link'>
-        <a href='#'><button className='intro-link-btn'>Download my Resume</button></a>
+        <a href='OluwatopeFolorunsoresume25.pdf' target='_blank'><button className='intro-link-btn'>Download my Resume</button></a>
       </div>
     </div>
   )
