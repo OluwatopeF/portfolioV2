@@ -441,7 +441,7 @@
     /* mobile version template for components */
     width: 100%;
     /* height stays the same for each */
-    height: 90vh;
+    height: 100vh;
     /* create a carousel format for mobile only */
     position: relative;
     top: 4em;
